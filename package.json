@@ -1,5 +1,5 @@
 {
-	"name": "@gluecode-it/dispatcher",
+	"name": "@gluecode-it/gluelib",
 	"version": "1.0.0",
 	"description": "",
 	"main": "dist/index.js",
@@ -7,6 +7,7 @@
 		"test": "jest --coverage",
 		"posttest": "npm run format",
 		"dev:test": "jest --coverage --coverage-reporters html --watch-all",
+		"dev:start": "npx tsc; node dist/test2.js",
 		"format": "prettier --loglevel warn --write \"**/*.{ts,tsx,css,md}\""
 	},
 	"author": "",
@@ -50,6 +51,7 @@
 		"@types/flux": "^3.1.9",
 		"@types/immutable": "^3.8.7",
 		"flux": "^3.1.3",
-		"immutable": "^4.0.0-rc.12"
+		"immutable": "^4.0.0-rc.12",
+		"source-map-support": "^0.5.19"
 	}
 }
